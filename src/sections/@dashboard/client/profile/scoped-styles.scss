@@ -1,0 +1,23 @@
+.cs-message__content {
+  padding: 0;
+  background-color: transparent;
+}
+
+.cs-message--outgoing .cs-message__content {
+  background-color: transparent;
+}
+
+.cs-message--incoming .cs-message__content {
+  background-color: transparent;
+}
+
+.cs-message__footer .cs-message__sent-time {
+  color: inherit;
+}
+
+.cs-message__footer .cs-message__sender-name {
+  color: inherit;
+}
+.cs-message__footer .cs-message__sent-time {
+  color: inherit;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Finpace</title>
+    <meta
+      name="description"
+      content="Easy enrollment automation for busy advisors. Finpace simultaneously executes your onboarding tasks, so you can focus on your most important work."
+    />
+    <meta name="keywords" content="bitsy,advisor,application,dashboard,admin,finpace" />
+    <meta name="author" content="Finpace" />
+    <script>
+      window.global ||= window; // vite global issue
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Using Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Using Local Font -->
+    <link rel="stylesheet" type="text/css" href="/fonts/index.css" />
+
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P6WRX65');</script> -->
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager Mitch -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD2VPR9');</script> -->
+    <!-- End Google Tag Manager Mitch -->
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+
+    <script type="text/javascript">
+      const customConfigs = {
+        'gwnforms.com': { title: 'GWN Securities Forms' },
+        'forms.xypnsapphire.com': { title: 'XYPN Sapphire Forms' },
+        'xypn.finpace.app': { title: 'XYPN Sapphire Forms' },
+      };
+
+      const customConfig = customConfigs[window.location.hostname];
+      if (customConfig) {
+        const { title, description } = customConfig;
+
+        if (title) {
+          document.title = title;
+        }
+
+        if (description) {
+          document.querySelector('meta[name="description"]').setAttribute('content', description);
+        }
+      }
+    </script>
+  </body>
+</html>

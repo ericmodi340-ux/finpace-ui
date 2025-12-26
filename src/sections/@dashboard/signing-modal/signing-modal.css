@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.line-break {
+  white-space: pre-wrap;
+}
+
+/* margin to the left of ordered list */
+/* .markdown li {
+  list-style-position: inside;
+} */
+
+.signPad {
+  width: 100%;
+  height: 100%;
+}

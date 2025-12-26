@@ -1,0 +1,609 @@
+.use-bootstrap,
+.formio-dialog {
+  $primary: #166168;
+  $success: #0e7f2e;
+  $danger: #f9a107;
+  @import 'bootstrap/scss/bootstrap.scss';
+  pre {
+    display: block;
+    font-size: 87.5%;
+    color: #212529;
+    background-color: #f2f2f2;
+  }
+  .btn-default {
+    // background-color: #f2f2f2;
+  }
+  .table {
+    color: inherit;
+  }
+}
+
+.use-formio,
+body > div:not(#root):not([role='presentation']):not(.MuiModal-root) {
+  @import 'formio.scss';
+}
+
+.use-formio .form-group.formio-hidden,
+body > div:not(#root):not([role='presentation']):not(.MuiModal-root) .formio-hidden {
+  margin: 0;
+}
+
+.use-formio {
+  .alert-info {
+    padding: 14px 16px;
+    // color: #001c39;
+    background-color: inherit;
+    border-radius: 8px;
+    border: none;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .alert-danger {
+    padding: 14px 16px;
+    color: #7a0927;
+    background-color: #ffe6d6;
+    border-radius: 8px;
+    border: none;
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    text-align: left;
+
+    & > p:first-child {
+      font-size: 1rem;
+      margin-top: -2px;
+      text-transform: capitalize;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    & > ul {
+      margin-left: 24px;
+      // counter-reset: errors;
+    }
+
+    & > ul:last-child {
+      margin-bottom: 0;
+    }
+
+    // & > ul > li > span[ref='errorRef'] {
+    //   counter-increment: errors;
+    //   font-size: 0;
+    // }
+
+    // & > ul > li > span[ref='errorRef']::before {
+    //   content: 'Please correct error ' counter(errors) '';
+    //   display: inline;
+    //   font-size: 0.875rem;
+    // }
+  }
+
+  .builder-sidebar_search::placeholder {
+    // color: rgb(145, 158, 171, 0.8);
+    color: inherit;
+    margin-bottom: 12px;
+  }
+
+  .card,
+  .card-header {
+    background-color: inherit;
+    border-radius: 6px;
+    border: none !important;
+    box-shadow: 0 0 2px 0 rgb(145 158 171 / 40%);
+  }
+
+  .form-builder-panel {
+    margin-bottom: 12px;
+    background-color: inherit;
+
+    .builder-group-button {
+      color: inherit;
+      font-weight: 700;
+      line-height: 1.5;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-family:
+        DM Sans,
+        sans-serif;
+      padding: 8px 12px;
+      // color: #212b36;
+      transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      overflow: hidden;
+    }
+
+    .collapse:not(.show) {
+      display: inherit;
+    }
+
+    .btn-primary {
+      background: transparent;
+      // color: #637381;
+      color: inherit;
+      font-size: 0.85em;
+      border: none;
+      margin-bottom: 4px;
+      padding: 6px 9px;
+      border-radius: 6px;
+
+      i {
+        width: 15px;
+        text-align: center;
+      }
+
+      &:hover {
+        color: #166168;
+        background: rgba(13, 196, 182, 0.08);
+      }
+    }
+  }
+
+  .builder ol.breadcrumb {
+    border-radius: 8px;
+    background-color: inherit;
+
+    .wizard-page-label {
+      // background-color: inherit;
+      border-radius: 4px;
+      font-size: 0.8em;
+      padding: 6px 9px;
+      font-weight: 600;
+    }
+  }
+
+  .builder-component .card-header {
+    // color: rgb(145, 143, 143);
+    color: inherit;
+
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.125rem;
+
+    @media (min-width: 600px) {
+      font-size: 1.1875rem;
+    }
+
+    @media (min-width: 900px) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .builder-component .card-body {
+    padding: 16px;
+    // color: rgb(145, 143, 143);
+    color: inherit;
+    // background-color: inherit !important;
+  }
+
+  .drag-container {
+    padding: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  input.form-control,
+  .formio-component-day select.form-control,
+  .selection.form-control {
+    font: inherit;
+    letter-spacing: inherit;
+    // color: currentcolor;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: content-box;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: calc(100% - 28px);
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    line-height: 1.4375em;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: none;
+  }
+
+  .formio-component-datetime input.form-control {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+  }
+
+  .formio-component-datetime div[ref='suffix'] .input-group-text {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+
+  input.form-control:hover,
+  .formio-component-day select.form-control:hover,
+  .selection.form-control:hover {
+    // border-color: rgb(33, 43, 54);
+    // border-color: rgba(167, 167, 167, 0.818);
+    border-color: inherit;
+  }
+
+  input.form-control:focus,
+  .formio-component-day select.form-control:focus {
+    box-shadow: none !important;
+    // border-color: rgb(13, 196, 182);
+    border-width: 2px;
+    margin: -1px;
+  }
+
+  button.btn-primary,
+  button.MuiButton-containedPrimary {
+    height: 48px;
+    padding: 8px 22px;
+    box-shadow: rgba(13, 196, 182, 0.24) 0px 8px 16px 0px;
+    border-radius: 8px;
+    font-weight: 700;
+
+    &:hover {
+      box-shadow: none;
+      // background-color: #067f8d;
+    }
+  }
+}
+
+/*
+* Rendered form
+*/
+.use-formio .formio-form {
+  .form-group {
+    text-align: left;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .field-required:after {
+    color: #ff4032;
+  }
+
+  input,
+  .formio-component-day select,
+  .selection {
+    font-size: 1.3rem;
+
+    &::placeholder {
+      opacity: 0.7;
+      text-align: left;
+      font-size: 1.1rem;
+    }
+  }
+  select {
+    font-size: 1.3rem;
+    color: inherit;
+    background: transparent;
+  }
+
+  .choices__list--dropdown .choices__input,
+  .choices__list--dropdown .choices__item {
+    font-size: 1rem;
+    color: black;
+  }
+
+  .formio-error-wrapper {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+    padding: 0;
+  }
+
+  .form-group.has-error label,
+  .form-group.formio-error-wrapper label {
+    color: #ff4032;
+  }
+
+  .has-feedback .form-control {
+    padding-right: 14px !important;
+    background-image: none !important;
+  }
+
+  .form-control.is-invalid {
+    border-color: #ff4032;
+  }
+
+  .formio-errors .error {
+    color: #ff4032;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    text-transform: capitalize;
+  }
+
+  .formio-wizard-nav-container {
+    justify-content: space-between;
+    padding: 24px 0;
+    flex-direction: column-reverse; // display next/submit button above previous button
+    flex-wrap: wrap;
+  }
+
+  .formio-wizard-nav-container li {
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 12px 0;
+  }
+
+  // ? Uncomment the following whenever the extra Cancel button is no longer appearing
+  // .formio-wizard-nav-container li:first-child,
+  // .formio-wizard-nav-container li:nth-child(2n + 1) {
+  //   margin-bottom: 0;
+  // }
+
+  // .formio-wizard-nav-container li:last-child,
+  // .formio-wizard-nav-container li:nth-child(2n + 2) {
+  //   margin-top: 0;
+  // }
+
+  // ? Uncomment the following for previous/next buttons side by side:
+  // .formio-wizard-nav-container li {
+  //   flex-basis: 50%;
+  //   flex-grow: 1;
+  //   margin: 0 12px;
+  // }
+
+  // .formio-wizard-nav-container li:first-child,
+  // .formio-wizard-nav-container li:nth-child(2n + 1) {
+  //   margin-left: 0;
+  // }
+
+  // .formio-wizard-nav-container li:last-child,
+  // .formio-wizard-nav-container li:nth-child(2n + 2) {
+  //   margin-right: 0;
+  // }
+
+  .formio-wizard-nav-container button {
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    line-height: 1.7142857142857142;
+  }
+
+  .formio-wizard-nav-container button.btn-wizard-nav-cancel {
+    display: none !important;
+  }
+
+  .btn-wizard-nav-previous {
+    -webkit-tap-highlight-color: transparent;
+    background-color: inherit;
+    transition:
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: inherit;
+    border: 0;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      background-color: rgba(13, 196, 182, 0.08);
+      // background-color: inherit;
+    }
+  }
+
+  .btn-wizard-nav-next,
+  .btn-wizard-nav-previous,
+  .btn-wizard-nav-submit {
+    font-size: 0;
+  }
+
+  .btn-wizard-nav-next::before,
+  .btn-wizard-nav-previous::before,
+  .btn-wizard-nav-submit::before {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  .btn-wizard-nav-next::before,
+  .btn-wizard-nav-submit::before {
+    content: 'Continue';
+  }
+
+  .btn-wizard-nav-previous::before {
+    content: 'Go back';
+  }
+
+  .formio-component-day {
+    div[role='group'] label {
+      font-size: 0.9rem;
+    }
+  }
+
+  table.datagrid-table {
+    // color: rgb(145, 143, 143);
+    color: inherit;
+    border: none !important;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      tr {
+        display: block;
+        margin-bottom: 24px;
+        padding: 24px;
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow:
+          0 24px 48px 0 rgb(145 158 171 / 12%),
+          0 3px 24px 0 rgb(145 158 171 / 12%);
+        border-radius: 16px;
+      }
+
+      td {
+        display: block;
+        border: none !important;
+        padding: 0;
+        margin-bottom: 24px;
+      }
+
+      td:first-child {
+        margin-top: calc(-1 * (0.375rem + 1px));
+      }
+
+      td:last-child {
+        margin-bottom: 0;
+      }
+
+      .formio-button-remove-row {
+        background: transparent;
+        font-weight: 700;
+        line-height: 1.7142857142857142;
+        font-size: 0.875rem;
+        padding: 6px 8px;
+        border-radius: 8px;
+        color: #ff4032;
+        width: 150px;
+        transition:
+          background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        i {
+          font-size: 20px;
+        }
+
+        &::after {
+          content: 'Remove row';
+          display: 'inline-block';
+          margin-left: 8px;
+        }
+
+        &:hover {
+          background-color: rgba(255, 64, 50, 0.08);
+        }
+
+        &:focus {
+          background-color: rgba(255, 64, 50, 0.16);
+          color: #ff4032;
+          outline: 0;
+          border: none;
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        display: block;
+        text-align: right;
+      }
+
+      td {
+        display: block;
+        border: none !important;
+        padding: 0;
+      }
+    }
+  }
+
+  .formio-component-radio {
+    input[type='radio'] {
+      -webkit-appearance: none;
+      appearance: none;
+      border: 1px solid;
+      border-radius: 50%;
+      display: grid;
+    }
+    input[type='radio']::before {
+      content: '';
+      width: 0.65em;
+      height: 0.65em;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      background-color: #166168;
+    }
+    input[type='radio']:checked::before {
+      transform: scale(1);
+    }
+  }
+
+  .btn:focus {
+    box-shadow: none !important;
+  }
+
+  .btn[type='submit'] {
+    width: 100%;
+    margin-top: 24px;
+
+    &.btn-danger {
+      background-color: #166168;
+      border-color: #166168;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    & + div[ref='buttonMessageContainer'] {
+      display: none;
+    }
+  }
+
+  .formio-component-content {
+    text-align: left;
+  }
+
+  // Format panels as same effect on data-grid
+  .formio-component-panel {
+    .card {
+      background-color: inherit;
+      border-radius: 16px;
+      border: none !important;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      box-shadow:
+        0 24px 48px 0 rgb(145 158 171 / 12%),
+        0 3px 24px 0 rgb(145 158 171 / 12%);
+      padding: 0 8px;
+    }
+  }
+
+  .formio-component-datagrid {
+    overflow-x: unset;
+  }
+}
+
+// Mobile pagination styling
+.formrenderer.mobile {
+  width: calc(100vw - 20px);
+  margin-left: calc(-50vw + 50% + 10px);
+  padding: 24px;
+}
+
+// Hide success alert in allocate model
+.use-bootstrap {
+  .alert-success {
+    display: none;
+  }
+}
+
+.use-formio {
+  .scrollable {
+    overflow-y: auto;
+    max-height: 500px;
+  }
+}

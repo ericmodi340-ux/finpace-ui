@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180 180">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch_7);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="180" height="180"/>
+    </clipPath>
+    <linearGradient id="New_Gradient_Swatch_7" data-name="New Gradient Swatch 7" x1="30" y1="90" x2="150" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020b0f"/>
+      <stop offset=".48" stop-color="#00273f"/>
+      <stop offset=".58" stop-color="#002a41"/>
+      <stop offset=".66" stop-color="#003347"/>
+      <stop offset=".73" stop-color="#014453"/>
+      <stop offset=".79" stop-color="#025b63"/>
+      <stop offset=".86" stop-color="#037978"/>
+      <stop offset=".92" stop-color="#059e91"/>
+      <stop offset=".97" stop-color="#07c9af"/>
+      <stop offset="1" stop-color="#09e1c0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-3">
+      <path class="cls-1" d="M117.99,107.4h-5.56l-1.97-1.9c8.91-10.35,12.73-24.13,10.42-37.59-3.31-19.57-19.64-35.19-39.35-37.59-25.09-3.17-48,14.59-51.17,39.68-.48,3.82-.48,7.68,0,11.49,2.39,19.71,18.02,36.04,37.59,39.35,13.46,2.31,27.24-1.51,37.59-10.42l1.9,1.97v5.56l29.91,29.91c2.89,2.89,7.6,2.89,10.49,0s2.89-7.6,0-10.49l-29.84-29.98ZM75.76,107.4c-17.53,0-31.67-14.15-31.67-31.67s14.15-31.67,31.67-31.67,31.67,14.15,31.67,31.67-14.15,31.67-31.67,31.67Z"/>
+    </g>
+  </g>
+</svg>

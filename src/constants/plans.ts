@@ -1,0 +1,121 @@
+import { FirmPlanId, FirmServiceId } from '../@types/firm';
+
+export const planServices = {
+  [FirmPlanId.PROSPECT]: {
+    [FirmServiceId.PROSPECTS]: true,
+    [FirmServiceId.CLIENTS]: false,
+    [FirmServiceId.EXPORT]: false,
+  },
+  [FirmPlanId.SELL]: {
+    [FirmServiceId.PROSPECTS]: true,
+    [FirmServiceId.CLIENTS]: true,
+    [FirmServiceId.EXPORT]: false,
+  },
+  [FirmPlanId.PROTECT]: {
+    [FirmServiceId.PROSPECTS]: true,
+    [FirmServiceId.CLIENTS]: true,
+    [FirmServiceId.EXPORT]: true,
+  },
+  [FirmPlanId.ENTERPRISE]: {
+    [FirmServiceId.PROSPECTS]: true,
+    [FirmServiceId.CLIENTS]: true,
+    [FirmServiceId.EXPORT]: true,
+  },
+};
+
+/*
+ * pricingPlans are how plans can be structured for use with the PlanSelect onboarding page
+ */
+export const pricingPlans = [
+  {
+    priceId: '2__per_advisor',
+    subscription: 'Prospect',
+    icon: 'fa6-solid:address-card',
+    priceMonthly: 19.0,
+    priceYearly: 204.0,
+    pricePer: '/advisor',
+    caption: 'For teams looking to simplify and digitize data intake',
+    lists: [
+      { text: 'Outreach Automation', isAvailable: true },
+      { text: 'Secure  User Portals', isAvailable: true },
+      { text: 'Analytics plus Reporting', isAvailable: true },
+      { text: 'Audit Protection (Limited)', isAvailable: false },
+      { text: 'E-signature', isAvailable: false },
+      { text: 'CRM Sync', isAvailable: false },
+      { text: 'Batched Client Uploads', isAvailable: false },
+      { text: 'White-labeling', isAvailable: false },
+      { text: 'Dedicated Support Team', isAvailable: false },
+      { text: 'Tailored Integrations', isAvailable: false },
+    ],
+    labelAction: 'subscribe',
+  },
+  {
+    priceId: '3__per_advisor',
+    subscription: 'Sell',
+    icon: 'fa6-solid:arrow-up-right-dots',
+    priceMonthly: 49.0,
+    priceYearly: 540.0,
+    pricePer: '/advisor',
+    caption: 'For growing firms looking to grow faster',
+    lists: [
+      { text: 'Outreach Automation', isAvailable: true },
+      { text: 'Secure  User Portals', isAvailable: true },
+      { text: 'Analytics plus Reporting', isAvailable: true },
+      { text: 'Audit Protection (Limited)', isAvailable: true },
+      { text: 'E-signature', isAvailable: true },
+      { text: 'CRM Sync', isAvailable: true },
+      { text: 'Batched Client Uploads', isAvailable: false },
+      { text: 'White-labeling', isAvailable: false },
+      { text: 'Dedicated Support Team', isAvailable: false },
+      { text: 'Tailored Integrations', isAvailable: false },
+    ],
+    labelAction: 'subscribe',
+  },
+  {
+    priceId: '4__per_advisor',
+    subscription: 'Protect',
+    icon: 'fa6-solid:people-group',
+    priceMonthly: 59.0,
+    priceYearly: 648.0,
+    pricePer: '/advisor',
+    caption: 'For teams looking to simplify and digitize data intake',
+    lists: [
+      { text: 'Outreach Automation', isAvailable: true },
+      { text: 'Secure  User Portals', isAvailable: true },
+      { text: 'Analytics plus Reporting', isAvailable: true },
+      { text: 'Audit Protection (Full feature)', isAvailable: true },
+      { text: 'E-signature', isAvailable: true },
+      { text: 'CRM Sync', isAvailable: true },
+      { text: 'Batched Client Uploads', isAvailable: true },
+      { text: 'White-labeling', isAvailable: false },
+      { text: 'Dedicated Support Team', isAvailable: false },
+      { text: 'Tailored Integrations', isAvailable: false },
+    ],
+    labelAction: 'subscribe',
+  },
+  {
+    subscription: 'Enterprise',
+    icon: 'fa6-solid:building',
+    priceMonthly: 'Call',
+    priceYearly: 'Call',
+    pricingNote: 'for pricing',
+    caption: 'Focused on every stage of customer acquisition',
+    lists: [
+      { text: 'Outreach Automation', isAvailable: true },
+      { text: 'Secure  User Portals', isAvailable: true },
+      { text: 'Analytics plus Reporting', isAvailable: true },
+      { text: 'Audit Protection (Full feature)', isAvailable: true },
+      { text: 'E-signature', isAvailable: true },
+      { text: 'CRM Sync', isAvailable: true },
+      { text: 'Batched Client Uploads', isAvailable: true },
+      { text: 'White-labeling', isAvailable: true },
+      { text: 'Dedicated Support Team', isAvailable: true },
+      { text: 'Tailored Integrations', isAvailable: true },
+    ],
+    labelAction: 'contact us',
+    emailAction: {
+      to: 'tech@finpace.com',
+      subject: 'Finpace Enterprise Plan Inquiry',
+    },
+  },
+];

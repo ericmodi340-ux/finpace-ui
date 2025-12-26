@@ -1,0 +1,7 @@
+// .eslintignore
+build/*
+public/*
+src/service-worker.ts
+src/setupTests.ts
+src/components/form/custom/firms/gwn/index.jsx
+src/utils/formio.js

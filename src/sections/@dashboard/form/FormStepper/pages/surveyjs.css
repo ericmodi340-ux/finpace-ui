@@ -1,0 +1,19 @@
+.sd-action-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.sd-btn {
+  width: 100%;
+}
+
+.sd-navigation__next-btn {
+  background-color: var(--sjs-primary-backcolor, var(--primary, #19b394));
+  color: var(--sjs-primary-forecolor, var(--primary-foreground, #fff));
+}
+
+.sd-navigation__next-btn:hover {
+  color: var(--sjs-primary-forecolor, var(--primary-foreground, #fff));
+  background-color: var(--sjs-primary-backcolor-dark, rgb(20, 164, 139));
+}
